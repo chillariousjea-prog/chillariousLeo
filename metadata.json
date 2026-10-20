@@ -1,0 +1,6 @@
+{
+  "name": "Leo and the Polite Screen",
+  "description": "An interactive children's storybook teaching pupils about AI anthropomorphism, word prediction, and keeping the Human-in-the-Loop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

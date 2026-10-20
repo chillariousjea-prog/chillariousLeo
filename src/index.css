@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-reading: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body.font-dyslexic-mode {
+    --font-body: 'Comic Neue', cursive, sans-serif;
+    --font-reading: 'Comic Neue', cursive, sans-serif;
+    letter-spacing: 0.04em;
+    word-spacing: 0.08em;
+    line-height: 1.8;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-reading {
+  font-family: var(--font-reading);
+}
+
+/* Custom subtle parchment texture & soft glow */
+.storybook-card {
+  box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.08), 0 8px 10px -6px rgba(217, 119, 6, 0.04);
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
